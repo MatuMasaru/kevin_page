@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="background-color: blueviolet;">
+<html lang="es" style="background-color: rgb(37, 99, 43)">
     <head>
 
         <meta charset="UTF-8">
@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="estilos.css">
     </head>
 
-    <body>
-        <header>
-            <nav>
-                <ol>
+    <body >
+        <header class="header">
+            <nav class="header-nav">
+                <ol style="margin: 0px;">
                     <li>
                         <a class="link" href="#historia" >historia</a>
                      </li>
@@ -24,48 +24,108 @@
 
             </nav>
         </header>
-        <section id="historia">  historia de kevin 
-            <h1><strong>kevin johansen </strong> </h1><p> <br> 
-                 es un cantante argentino nacido en Estados Unidos. <br>
-                  Se caracteriza por un sonido particular que mezcla la música <br> 
-                popular de su país y la de Latinoamérica con el rock alternativo y <br> 
-                el pop estadounidense, fusionándolos en un estilo que el mismo <br> 
-                cantante y compositor ha llamado "Des-Generado"</p>
-            <img>imagen de kevin 
+        <section class="presentacion">
+                <div class="presentacion-detalles">
+                    <div class="presentacion-texto">
+                        <h1 >  polifacético <br> <strong> músico</strong> y <strong> compositor </strong></h1>
+                    </div>
+                </div>
         </section>
-        <section id="discos"> discos
-            <h2><strong>toda la discografia</strong></h2>
-            <article>primer cd
-                <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/kjohansenthenada.jpg" alt="disco THE NADA" width="200"  >
-
-            </article> 
-            <article>segundo ccd sur o no sur
-                <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/sur o no sur.jpg" alt="disco sur o no sur" width="200" >
-
-            </article> 
-            <article>tercer cdcitizen
-                <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/city-zen-5.jpg" alt="disco city zen " width="200" >
-
-            </article> 
-            <article>cuarto cd logo
-                <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/logo_4.jpg" alt="cd de logo "width = "200">
-
-            </article> 
-
+        <section id="historia" class="history">
+            <div class="history-resenia">
+                <p class="history-description" > <br> 
+                    cantante argentino nacido en Estados Unidos. <br>
+                     Se caracteriza por un sonido particular que mezcla la música <br> 
+                   popular de su país y la de Latinoamérica con el rock alternativo y <br> 
+                   el pop estadounidense, fusionándolos en un estilo que el mismo <br> 
+                   cantante y compositor ha llamado "Des-Generado"</p>
+            </div>
+           
         </section>
-        <section id="favoritas">
+        <section id="discos"class="discos">
+            <h3 class="discos-tittle" ><small><strong>toda la discografia</strong></small></h3>
+           <div class="discos-cd1" >
+               <article >
+                <p  class="discos-tittle" > <strong> primer cd </strong> </p>
+
+                   <figure class="discos-img1">
+                       <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/kjohansenthenada.jpg" alt="disco THE NADA" width="200"  >
+                   </figure>
+               </article> 
+            </div>
+                 
+            <div class="discos-cd2" >
+                <article  >
+                    <p class="discos-tittle"  > <strong> segundo ccd sur o no sur</strong> </p>
+                    
+                    <figure class="discos-img2">
+                        <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/sur o no sur.jpg" alt="disco sur o no sur" width="200" >
+                    </figure>
+
+                    <p></p>
+                </article> 
+            </div>
+            <div class="discos-cd3" >
+                <article >
+                    <p class="discos-tittle" > <strong> citizen</strong> </p>
+                    <figure class="discos-img3">
+                        <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/city-zen-5.jpg" alt="disco city zen " width="200" >
+                    </figure>
+                </article> 
+            </div>
+
+            <div class="discos-cd4" >
+                <article  >
+                    <p  class="discos-tittle" ><strong> logo</strong> </p>
+                    
+                    <figure class="discos-img4">
+                        <img src="/home/matias/Desktop/java_platzi/web_matu/imagenes/logo_4.jpg" alt="cd de logo "width = "200">
+                    </figure>
+    
+                </article> 
+    
+            </div>
+           
+        </section>
+
+
+
+
+        <section id="favoritas" class="favorite" >
             canciones favoritas
+
+            <article class="favorite-song">lista de canciones cd 1
+                <figure>
+
+                    <img src="" alt="imagen cd1">
+                </figure>
+            </article>
+            <article  class="favorite-song">lista de canciones cd 2
+                <figure>
+
+                    <img src="" alt="imagen cd1">
+                </figure>
+            </article>
+            <article class="favorite-song">lista de canciones cd 3
+                <figure>
+                    <img src="" alt="imagen cd1">
+                </figure>
+            </article>
+            <article class="favorite-song">lista de canciones cd 4
+                <figure>
+                    <img src="" alt="imagen cd1">
+                </figure>
+            </article>
         </section>
-
-
-        <section id="conciertos">
-            <h2>eventos proximos 2020 </h2>
+        <section id="conciertos" class="gira">
+            <h2 class="gira-tittle"><small><strong> eventos proximos 2020</strong></small>  </h2>
             
-            <ol>
-             <li> 26/02/2020 <strong>SAN BORJA-LIMA </strong></li> 
-             <li>8/05/2020  <strong>CAPITAL FEDERAL</strong></li> 
+            <ol class="gira-conciertos" >
+                <article>  26/02/2020 <strong>SAN   BORJA-LIMA </strong>  </article>
+                <article> 8/05/2020  <strong>CAPITAL FEDERAL</strong>  </article>
+             
             </ol>
         </section>
-        <footer>footer aca van todo sobre contactos formulario</footer>
+        <footer class="footer" >footer aca van todo sobre contactos formulario</footer>
     </body>
 </html>

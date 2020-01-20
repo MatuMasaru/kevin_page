@@ -1,8 +1,118 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6{
+    margin: 0px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.presentacion{
+    height: 300px;
+    background-image: url(imagenes/KevinJohansen.jpg);
+    background-size: 1300px  300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: brown;
+    margin: 0px;
+}
+.presentacion-detalles{
+    height: 300px;
+    width: 500px;
+    margin: 0px;
+}
+
+.presentacion-imagen{
+    width: 500px;
+    margin: 0px;
+}
+h1{
+    margin: top right botton left ;
+    font-size: 40px ;
+    line-height: 1.3;
+    color: aliceblue;
+    text-align: center;
+}
+
+.presentacion-texto{
+    position: relative;
+    top: 90px;
+}
 
 header{
-    background-color: aqua;
+    margin: 0px;
+    background-color: #1b2127;
+    color: white;
+    text-decoration: none;
 }
+.header a{
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+}
+h1 strong{
+    color: midnightblue;
+}
+.history{
+    margin: 0px;
+    background-image:url(imagenes/kevin.jpg) ;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 1400px 500px;
+    height: 400px;
+    width: 500;
+}
+
+.history-description{
+
+}
+
+
+.history-resenia{
+    
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    color: bisque;
+    position: relative;
+    top: 110px;
+    font-family:sans-serif;
+}
+
+.discos{
+    height: 600px;
+    width: 1300px;
+}
+.discos-cd1,.discos-cd2,.discos-cd3,.discos-cd4 {
+    float: left;
+    height: 500px;
+    width:  250px;
+    border-radius: 5%;
+    border-left-style:double;
+    border-right-style: double; 
+    margin: 10px; 
+    padding: 15px; 
+    text-align: left;;
+
+}
+.discos-img1,.discos-img2,.discos-img3,.discos-img4{
+    font-size: center;
+    position: relative;
+    right: 15px;
+
+}
+.discos-tittle{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(30, 30, 75);
+}
+
 
 
