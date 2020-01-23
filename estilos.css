@@ -1,118 +1,160 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
+*{
+    margin: 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3, 
-h4,
-h5,
-h6{
-    margin: 0px;
-    text-align: center;
-    font-weight: normal;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+a{
+     text-decoration: none;
+     color: black;
+}
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 50px auto ;
+    grid-template-areas: "header"
+            "presentacion" "history" "cds" "top" "contact";
 }
 
-.presentacion{
-    height: 300px;
-    background-image: url(imagenes/KevinJohansen.jpg);
-    background-size: 1300px  300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-color: brown;
-    margin: 0px;
-}
-.presentacion-detalles{
-    height: 300px;
-    width: 500px;
-    margin: 0px;
+                    /* header */
+.header{
+    grid-area: header;
+    background:rgb(10, 73, 145) ;  
+      padding: 5px 10px;
+    display: grid;
+    grid-template-columns: auto  1fr  auto;
+    grid-template-areas: "logo search tool";
+    align-items: center;
+    justify-content: space-between ;
+    grid-gap: 20px;
 }
 
-.presentacion-imagen{
-    width: 500px;
-    margin: 0px;
+.header .logotipo{
+grid-area: logo;
+display: flex;
+align-items: center;
+
 }
-h1{
-    margin: top right botton left ;
+.header .logotipo .logo .fab{
+    background:rgb(10, 73, 145) ;
     font-size: 40px ;
-    line-height: 1.3;
+    border-radius: 8px;
+    padding: 10px 15;
     color: aliceblue;
-    text-align: center;
-}
 
-.presentacion-texto{
+}
+.header .logotipo  .logo span{
+    text-transform: uppercase;
+    color: aliceblue;
     position: relative;
-    top: 90px;
+    top: -6px;
+    left: 3px;
 }
 
-header{
-    margin: 0px;
-    background-color: #1b2127;
-    color: white;
-    text-decoration: none;
+
+.header .bar-search{
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.header a{
-    color: white;
-    text-decoration: none;
-    margin: 0px;
+
+.header .bar-search input{
+    min-width: 65%;
+    padding: 0 15px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #d1e8f3;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-h1 strong{
-    color: midnightblue;
+
+
+.header .bar-search button{
+    height: 30px;
+    border: #ccc;
+    border-left: 1px solid  #ccc;
+    border-left: none;
+    color: rgb(104, 104, 156);
+    
+    padding: 0 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.header .bar-search button:hover{
+background-color: #d4b8b8;
+}
+
+.header .tools{
+grid-area: tool;
+display: flex;
+align-items: center;
+}
+
+.header .tools button{
+background :none  ;
+border: none;
+height: 40px;
+width: 40px;
+border-radius: 100px;
+color: #d1e8f3;
+padding: 7px 12px;
+cursor: pointer;
+font-size: 20px;
+margin-right: 18px;
+
+}
+
+.header .tools button:hover{
+    color: #ffffff;
+    background-color: #063061;
+}
+
+.header .tools .avatar {
+    display: inline-block;
+    width: 30px;
+    height:30px ;
+
+}
+.header .tools .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px ;
+}
+/* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~presentacion ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
+
+
+
+
+
+
+
+
+.presentacion{ 
+    grid-area: presentacion;
+    background-color: rgb(204, 164, 104);
 }
 .history{
-    margin: 0px;
-    background-image:url(imagenes/kevin.jpg) ;
-    background-position-x: right;
-    background-repeat: no-repeat;
-    background-size: 1400px 500px;
-    height: 400px;
-    width: 500;
+    grid-area: history;
+    background-color: rgb(153, 119, 67);
 }
-
-.history-description{
-
+.cds{
+    grid-area: cds;
+    background-color: rgb(134, 100, 48);
 }
-
-
-.history-resenia{
-    
-    text-align: center;
-    height: 400px;
-    width: 500px;
-    color: bisque;
-    position: relative;
-    top: 110px;
-    font-family:sans-serif;
+.top{
+    grid-area: top;
+    background-color: rgb(117, 77, 18);
 }
-
-.discos{
-    height: 600px;
-    width: 1300px;
+.contact{
+    grid-area: contact;
+    background-color: rgb(68, 46, 14);
 }
-.discos-cd1,.discos-cd2,.discos-cd3,.discos-cd4 {
-    float: left;
-    height: 500px;
-    width:  250px;
-    border-radius: 5%;
-    border-left-style:double;
-    border-right-style: double; 
-    margin: 10px; 
-    padding: 15px; 
-    text-align: left;;
-
-}
-.discos-img1,.discos-img2,.discos-img3,.discos-img4{
-    font-size: center;
-    position: relative;
-    right: 15px;
-
-}
-.discos-tittle{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(30, 30, 75);
-}
-
-
-
