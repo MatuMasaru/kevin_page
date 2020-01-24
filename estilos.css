@@ -12,7 +12,7 @@ a{
 
 .contenedor{
     width: 100%;
-    grid-area: estruct;
+    /* grid-area: estruct; */
 /*     padding: 10px 50px;
  */    min-height: 100vh;
     display: grid;
@@ -270,33 +270,116 @@ margin-right: 18px;
 
 
 
+ /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ footer ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
+.footer{
+    width: 100%;
+    height: 80px;
+    max-height: 80px;
+    background: #1c1d26;
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) 100px ;
+    grid-template-areas: "derecho autor";
+    grid-gap: 20px ;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
-.carrusel-images{
-    grid-area: carrus;
+.footer .derechos{
+    grid-area: derecho;
+    min-width: 100px;
+    font-size: 10px;
+    margin: 0 50px;
+    color: #d1e8f3;
+}
+.footer .img-creador{
+    grid-area: autor;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    border-image-slice: 3px 3px #000000;
+    position: relative;
+    right: 10px;
+    transition:2s ease;
+}
 
+.img-creador:hover{
+    height: 80px;
+    width: 80px;
 
+    
 }
 
 
- /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ cds ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
 
 
- .cds{
+
+
+
+ /* .cds{
+    /* height: 600px; */
+    display: block;
+    text-align: center;
+/*     justify-content: center; 
+    align-items: center;
+    background-color: #ffffff;
     grid-area: cds;
-
-    height: 600px;
-   /*  background-color: rgb(134, 100, 48); */
-   border: 1px solid #020f1d;
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "tittle "
+                        "discos";
 }
+
+.cds .tittle-cds{
+    grid-area: tittle;
+    text-align: center;
+}
+
+.cds .disks{
+    grid-area: discos;
+    display: grid;
+    grid-auto-rows: auto auto auto auto;
+
+    grid-template-areas: "disco1 "
+                        "disco2 "
+                        "disco3 "
+                        "disco4 " ;
+}
+
+.disks div{
+    height: 200px;
+    border: 1px solid #000000;
+    background-color: #e7e6e6;
+}
+.disk-1{
+    grid-area: disco1;
+}
+.disk-2{
+    grid-area: disco2;
+
+}
+.disk-3{
+    grid-area: disco3;
+
+}
+.disk-4{
+    grid-area: disco4;
+
+}
+
+ /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ cds ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*
+
+
 .top{
     height: 300px;
     grid-area: top;
     border: 1px solid #020f1d;
-   /*  background-color: rgb(117, 77, 18); */
+
 }
 .contact{
     grid-area: contact;
     height: 300px;
     border: 1px solid #020f1d;
-    /* background-color: rgb(68, 46, 14); */
-}
+   
+} */
