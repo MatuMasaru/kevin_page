@@ -10,21 +10,31 @@ a{
      text-decoration: none;
      color: black;
 }
+
+
 .contenedor{
     width: 100%;
     min-height: 100vh;
-    margin: auto;
     display: grid;
-    grid-template-rows: 50px auto ;
+    grid-template-rows: 50px 300px auto ;
     grid-template-areas: "header"
-            "presentacion" "history" "cds" "top" "contact";
+                        "presentacion" 
+                        "history"
+                        "cds"
+                        "top"
+                        "contact";
+    background-image: linear-gradient(to bottom right,  #0a4991, #020f1d) ;
+
+    transition: all  .3s ease;
+
 }
+
 
                     /* header */
 .header{
     grid-area: header;
-    background:rgb(10, 73, 145) ;  
-      padding: 5px 10px;
+/*     background:rgb(10, 73, 145) ;  
+ */    padding: 5px 10px;
     display: grid;
     grid-template-columns: auto  1fr  auto;
     grid-template-areas: "logo search tool";
@@ -40,7 +50,7 @@ align-items: center;
 
 }
 .header .logotipo .logo .fab{
-    background:rgb(10, 73, 145) ;
+
     font-size: 40px ;
     border-radius: 8px;
     padding: 10px 15;
@@ -54,7 +64,6 @@ align-items: center;
     top: -6px;
     left: 3px;
 }
-
 
 .header .bar-search{
     grid-area: search;
@@ -122,39 +131,78 @@ margin-right: 18px;
     display: inline-block;
     width: 30px;
     height:30px ;
-
+    margin-right: 10px;
 }
 .header .tools .avatar img {
     width: 100%;
     height: 100%;
     border-radius: 100px ;
+    
 }
 /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~presentacion ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
 
-
-
-
-
-
-
-
 .presentacion{ 
+    height: 300px;
+
+
     grid-area: presentacion;
-    background-color: rgb(204, 164, 104);
+    color: green;
+    background-image: url(./imagenes/kevin-johansen-1021x550.jpg);
+    align-items: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-height: 450px;
+    min-height: 300px; 
+    transition: all .10s ease;
+
+    transition: color 5s;
+
+  /*  -moz-transition: color .2s;
+   -webkit-transition: color .2s;
+   -o-transition: color .2s; */
+
 }
+
+.contenedor .presentacion:hover{
+    color: red;
+    height: 400px;
+}
+
+
+
+/* .presentacion h1{
+    max-width: 50%;
+    height: 200px;
+    color: cornflowerblue;
+    text-align: center;
+    position: absolute;
+    bottom: -100px;
+    margin: 0 30px;
+
+}
+ */
+
+
+
+
+
+
+
+/* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ history ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
 .history{
     grid-area: history;
-    background-color: rgb(153, 119, 67);
-}
+/*     background-color: rgb(153, 119, 67);
+ */}
 .cds{
     grid-area: cds;
-    background-color: rgb(134, 100, 48);
+   /*  background-color: rgb(134, 100, 48); */
 }
 .top{
     grid-area: top;
-    background-color: rgb(117, 77, 18);
+   /*  background-color: rgb(117, 77, 18); */
 }
 .contact{
     grid-area: contact;
-    background-color: rgb(68, 46, 14);
+    /* background-color: rgb(68, 46, 14); */
 }
