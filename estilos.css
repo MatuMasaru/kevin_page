@@ -13,8 +13,8 @@ a{
 .contenedor{
     width: 100%;
     grid-area: estruct;
-    padding: 10px 50px;
-    min-height: 100vh;
+/*     padding: 10px 50px;
+ */    min-height: 100vh;
     display: grid;
     grid-template-rows: 50px 450px auto ;
     grid-template-areas: "header"
@@ -146,7 +146,7 @@ margin-right: 18px;
    /*  align-items: center ; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     min-width: 360px;
     max-height: 450px;
     min-height: 200px; 
@@ -181,22 +181,122 @@ margin-right: 18px;
 /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ history ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
 .history{
     grid-area: history;
-/*     background-color: rgb(153, 119, 67);
+    display: grid;
+    grid-template-columns: 455px auto;
+    grid-template-areas: "info carrus";
+    background-image: linear-gradient(to top left,  #0a4991, #022f5f) ;
+    max-height: 500px;
+}
 
- */}
+
+
+
+.text:hover{
+    color: #6db4d4;
+    font-size: 1.5;
+}
+
+.text {
+    grid-area: info;
+    color:#a50b0b;
+    display: flex;
+    text-align: center;
+    justify-content:center ;
+    align-items: center;
+    min-height: 300px;
+    max-height: 500%;
+    transition: color 2s ease;
+
+}
+
+
+
+.history-description{
+    max-height: 450px;
+    min-height: 250px;
+    margin: 0 10%;
+    padding: 0 15%;
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px rgb(24, 41, 41);
+}
+
+.carrusel-images{
+    grid-area: carrus;
+    width: 500px;
+    height: 450px;
+    margin: auto ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.carrusel-images .img-slide {
+    min-width: 200px;
+    max-width: 780px;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+.carrusel-images ul{
+    width: 2500px;
+    margin: 0px 50px ;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    animation: slide 20s infinite alternate;
+}
+
+@keyframes slide{
+    0%{margin-left:  0px;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -500px;}
+    45%{margin-left: -500px;}
+
+    50%{margin-left: -1000px;}
+    65%{margin-left: -1000px;}
+
+    70%{margin-left: -1500px;}
+    80%{margin-left: -1500px;}
+
+    85%{margin-left: -2000px;}
+    100%{margin-left: -2000px;}
+
+    
+}
+
+
+
+
+.carrusel-images{
+    grid-area: carrus;
+
+
+}
+
 
  /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ cds ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
 
 
  .cds{
     grid-area: cds;
+
+    height: 600px;
    /*  background-color: rgb(134, 100, 48); */
+   border: 1px solid #020f1d;
 }
 .top{
+    height: 300px;
     grid-area: top;
+    border: 1px solid #020f1d;
    /*  background-color: rgb(117, 77, 18); */
 }
 .contact{
     grid-area: contact;
+    height: 300px;
+    border: 1px solid #020f1d;
     /* background-color: rgb(68, 46, 14); */
 }
