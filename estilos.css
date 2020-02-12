@@ -3,8 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-
 a{
      text-decoration: none;
      color: black;
@@ -14,14 +12,12 @@ a{
     width: 100%;
     /* grid-area: estruct; */
 /*     padding: 10px 50px;
- */    min-height: 100vh;
+ */    /* min-height: 100vh */;
     display: grid;
     grid-template-rows: 50px 450px auto ;
     grid-template-areas: "header"
                         "presentacion" 
                         "history"
-                        "cds"
-                        "top"
                         "contact";
     background-image: linear-gradient(to bottom right,  #0a4991, #020f1d) ;
 /*     transition: all  .3s ease;
@@ -143,17 +139,12 @@ margin-right: 18px;
 .presentacion{ 
     grid-area: presentacion;
     background-image: url(./imagenes/kevin-johansen-1021x550.jpg);
-   /*  align-items: center ; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-width: 360px;
-    max-height: 450px;
-    min-height: 200px; 
+    
     transition: all .10s ease;
-
     transition: color 5s;
-
     display: flex;
    justify-content: center;
    align-items: center;
@@ -163,9 +154,10 @@ margin-right: 18px;
     text-align: left;
     height: 100%;
     width: 100%;
-     padding: 60px;
-     text-shadow:  4px 6px  rgb(5, 5, 17) ;
+    padding: 4vw ;
+    text-shadow:  4px 6px  rgb(5, 5, 17) ;
     transition: color 5s;
+    font-size:3em ;
 
 } 
 
@@ -186,11 +178,9 @@ margin-right: 18px;
     grid-template-areas: "info carrus";
     background-image: linear-gradient(to top left,  #0a4991, #022f5f) ;
     max-height: 500px;
+    padding: 3% 0;
+    
 }
-
-
-
-
 .text:hover{
     color: #6db4d4;
     font-size: 1.5;
@@ -200,16 +190,12 @@ margin-right: 18px;
     grid-area: info;
     color:#a50b0b;
     display: flex;
-    text-align: center;
-    justify-content:center ;
     align-items: center;
     min-height: 300px;
     max-height: 500%;
     transition: color 2s ease;
 
 }
-
-
 
 .history-description{
     max-height: 450px;
@@ -224,7 +210,7 @@ margin-right: 18px;
 .carrusel-images{
     grid-area: carrus;
     width: 500px;
-    height: 450px;
+    height: 300px;
     margin: auto ;
     overflow: hidden;
     display: flex;
@@ -267,9 +253,6 @@ margin-right: 18px;
 
     
 }
-
-
-
  /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ footer ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*/
 .footer{
     width: 100%;
@@ -312,74 +295,26 @@ margin-right: 18px;
 }
 
 
+@media screen and ( max-width :968px ){
+    .history{
+        display: block;
+        height: auto;
+        max-height: none;
+        padding:5%;
+    }
+    .presentacion{
+        background-attachment: local;
+        background-size: cover ;
+
+    }
+    .profesion{
+        font-size:4vw ;
+
+    }
+    
 
 
-
-
-
- /* .cds{
-    /* height: 600px; 
-    display: block;
-    text-align: center;
-/*     justify-content: center; 
-    align-items: center;
-    background-color: #ffffff;
-    grid-area: cds;
-    display: grid;
-    grid-template-rows: 50px auto;
-    grid-template-areas: "tittle "
-                        "discos";
-}
-
-.cds .tittle-cds{
-    grid-area: tittle;
-    text-align: center;
-}
-
-.cds .disks{
-    grid-area: discos;
-    display: grid;
-    grid-auto-rows: auto auto auto auto;
-
-    grid-template-areas: "disco1 "
-                        "disco2 "
-                        "disco3 "
-                        "disco4 " ;
-}
-
-.disks div{
-    height: 200px;
-    border: 1px solid #000000;
-    background-color: #e7e6e6;
-}
-.disk-1{
-    grid-area: disco1;
-}
-.disk-2{
-    grid-area: disco2;
-
-}
-.disk-3{
-    grid-area: disco3;
-
-}
-.disk-4{
-    grid-area: disco4;
 
 }
 
- /* ~ ~ ~  ~ ~ ~ ~ ~ ~ ~  ~ cds ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~ ~ ~ ~~ ~*
 
-
-.top{
-    height: 300px;
-    grid-area: top;
-    border: 1px solid #020f1d;
-
-}
-.contact{
-    grid-area: contact;
-    height: 300px;
-    border: 1px solid #020f1d;
-   
-} */
